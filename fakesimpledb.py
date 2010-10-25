@@ -262,6 +262,6 @@ if __name__ == "__main__":
 
     # Global configuration
     cherrypy.config.update({'server.socket_host': BIND_ADDR,
-                            'server.socket_port': LOCAL_WEBSERVER_PORT})
+                            'server.socket_port': SERVER_PORT})
     # Run server
     cherrypy.quickstart(SimpleDBServer())
